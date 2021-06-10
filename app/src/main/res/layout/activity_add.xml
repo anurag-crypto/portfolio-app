@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewCount">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+        android:layout_height="1dp"
+       tools:contexts=".AddActivity"
+        tools:ignore="HardcodedText,Autofill">
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Enter Name and Position"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelA1"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/label1"
+            app:layout_constraintStart_toStartOf="@+id/label1"
+            app:layout_constraintTop_toBottomOf="@+id/label1"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA2"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Position"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/labelA1"
+        app:layout_constraintStart_toStartOf="@+id/labelA1"
+        app:layout_constraintTop_toBottomOf="@+id/labelA1"/>
+
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Enter Education"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelA2"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA3"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter University Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/label2"
+        app:layout_constraintStart_toStartOf="@+id/label2"
+        app:layout_constraintTop_toBottomOf="@+id/label2"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA4"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Degree"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/labelA3"
+        app:layout_constraintStart_toStartOf="@+id/labelA3"
+        app:layout_constraintTop_toBottomOf="@+id/labelA3"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA5"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Year"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/labelA4"
+        app:layout_constraintStart_toStartOf="@+id/labelA4"
+        app:layout_constraintTop_toBottomOf="@+id/labelA4"/>
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Enter Course"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelA5"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA6"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Organisation Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/label3"
+        app:layout_constraintStart_toStartOf="@+id/label3"
+        app:layout_constraintTop_toBottomOf="@+id/label3"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA7"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Course Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/labelA6"
+        app:layout_constraintStart_toStartOf="@+id/labelA6"
+        app:layout_constraintTop_toBottomOf="@+id/labelA6"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA8"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Year"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/labelA7"
+        app:layout_constraintStart_toStartOf="@+id/labelA7"
+        app:layout_constraintTop_toBottomOf="@+id/labelA7"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelA9"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter Github username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/labelA8"
+        app:layout_constraintStart_toStartOf="@+id/labelA8"
+        app:layout_constraintTop_toBottomOf="@+id/labelA8"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:onClick="submitData"
+        app:layout_constraintEnd_toEndOf="@+id/labelA9"
+        app:layout_constraintStart_toStartOf="@+id/labelA9"
+        app:layout_constraintTop_toBottomOf="@+id/labelA9"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

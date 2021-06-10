@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewCount">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        tools:contexts=".AddActivity"
+        tools:ignore="HardcodedText,Autofill">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="48dp"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@+id/crsname"
+            app:layout_constraintTop_toBottomOf="@+id/crsname"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="56dp"
+            android:onClick="openGithub"
+            android:text="Open github"
+            app:layout_constraintEnd_toStartOf="@+id/fab"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crsname" />
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:srcCompat="@drawable/pokemon"
+        android:contentDescription="Top Comder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Full Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Anurag Mishra"
+        android:layout_marginLeft="16dp" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Position"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+    <TextView
+        android:id="@+id/edu"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Education"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+    <TextView
+        android:id="@+id/label"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="College/University"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edu"
+        app:layout_constraintTop_toBottomOf="@+id/edu" />
+    <TextView
+        android:id="@+id/degree"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Degree"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="@+id/label"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/yr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Year"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toEndOf="@+id/label"
+            app:layout_constraintTop_toBottomOf="@+id/label" />
+
+        <TextView
+        android:id="@+id/courses"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Courses"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/degree"
+        app:layout_constraintTop_toBottomOf="@+id/degree" />
+    <TextView
+        android:id="@+id/org"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Organisation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/courses"
+        app:layout_constraintTop_toBottomOf="@+id/courses" />
+    <TextView
+        android:id="@+id/crsname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Course Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="@+id/org"
+        app:layout_constraintTop_toBottomOf="@+id/org"
+        android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/yr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Year"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.825"
+            app:layout_constraintStart_toEndOf="@+id/org"
+            app:layout_constraintTop_toBottomOf="@+id/org" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
